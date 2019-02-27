@@ -1,0 +1,131 @@
+*{margin: 0; padding: 0;}
+
+body{width: 100%;
+	font-family: 'Nanum Gothic', 'Roboto', sans-serif; 
+	font-size: 12px; 
+	color: #333
+	background-color: #fff;	}
+ul,li{list-style: none;}
+a{color:#000000; text-decoration: none;}
+img{border:none;}
+input{outline:none;border-radius:20px; }
+button {outline: none;}
+
+#wrap{width: 1600px;margin: 0 auto;}
+
+/* 헤더영역 */
+#header{width:100%;height: 250px;background-color: #fff; text-align: center; }
+#header_top{width:100%;height: 60px;background-color: #ffbab3; text-align: right; color:#000; overflow: hidden;}
+.left_logo1{ width:120px; height: 50px; float: left; margin: 15px;}
+.left_logo2{ width: 120px; height: 50px; float: left;  margin: 13px;}
+.top_menu{margin-left: 810px; width:280px; float: left; padding-top: 23px;}
+.top_menu >  li {float: left; font-size: 16px; margin: 5px;}
+.top_menu >  li a{}
+.search {width: 180px;height: 25px; float:right;margin-right:30px;padding-top: 23px;}
+.search input{height: 25px;border:1px solid #ccc;background:#fff url(images/search.png) no-repeat;background-position: 95% center;}
+
+#header_logo{width:100%; margin: 0 auto; padding-top: 70px; }
+
+/* 슬라이딩 영역 */
+#slideImg{width:100%; height: 550px;background-color: #fff; position: absolute;}
+#main{width:100%; height:500px; overflow: hidden;position: relative;}
+#main img{width: 100%;height: 500px;position: absolute;top: 0;left: 0;}
+#btn{width: 60px;margin: 10px auto;position: relative;}
+#btn ul{overflow: hidden;}
+#btn ul li{float: left;margin-right: 5px;}
+#btn ul li a{display: block;width: 15px;height: 15px;background-color: #ccc;border-radius: 50%;}
+#btn ul li a.select{background-color: #ffbab3;}
+
+/* 대메뉴 */
+#main_menu{width: 100%;height: 50px;  border-top: 1px solid #d9dadb;padding-top: 1px;position: relative;z-index: 100;}
+.main_menu{clear: both; width: 720px;margin: 0 auto;/*  height: 360px; *//* overflow: hidden;  */}
+.main_menu  li{float:left; width: 180px; }
+.main_menu  li  a {width: 180px;font-size: 24px; color: #828282; font-weight: lighter; text-align: center; display: block; background-color: transparent;padding: 10px 0;}
+.main_menu li a:hover{background-color: #ffd9d5;margin: 0 auto; }
+.main_menu li a span{font-weight: bold;color: #f05e5e;}
+/* 메뉴영역 */
+#s_menu{width: 720px; height: 300px; background: #fff; border: 2px solid #ffbab3;overflow: hidden; box-sizing: border-box;margin: 0 auto;  display: none;position: absolute;top: 50px;left:50%;margin-left: -360px;z-index: 100;}
+#s_menu ul{float: left; }
+#s_menu ul li{text-indent: 30px;margin: 5px 5px;}
+#s_menu ul li a{color: #000; font-size: 14px; line-height: 30px;display: block;}
+#s_menu ul li a:hover{font-weight: bold; }
+.s_menu1{width: 190px;}
+.s_menu2{width: 170px;}
+.s_menu3{width: 180px;}
+/* .s_menu{margin: 0 -30px;} */ 
+.main_menu:hover ~ #s_menu{display: block;}
+
+
+
+
+/* 컨텐츠 영역 */
+#content{width:100%; height: 1630px; background-color: #fff; }
+#box1{width: 100%; height: 644px; background-color: #fff; }
+h2{padding-top: 50px;text-align: center; font-size: 36px; color:#828282; font-weight: lighter;}
+.pro ul{width: 100%;overflow: hidden;margin:60px 0 0 120px;}
+.pro ul li {width:450px; height: 450px; float:left; font-size: 18px; text-align: center;  }
+.pro ul li a{width:450px; height: 450px;display: block;border-radius:50%; background-color: transparent; }
+.pro ul li a:hover{width: 450px;height: 450px;margin: 0 auto; background-color: #ebebeb; border-radius:50%; }
+.pro ul li a > img {width: 150px;height: 200px;padding-top: 20px;}
+.pro ul li a > span{display: block;}
+.mark {}
+.mark img {width: 40px; height: 40px;}
+.pro1{font-size: 18px; }
+.txt1{color: #fe0000; font-weight: bold; }
+.txt2{font-weight: bold;}
+.txt3{color: #828282; font-size: 16px; text-decoration: line-through;}
+
+#box2{width: 960px; height: 71px; background-color: #f9f9f9;margin:0 auto; margin-top: 20px;}
+.icon {width: 960px; }
+.icon li {float: left;width: 120px;text-align: center;}
+.icon li a {display: block;}
+.icon li a  img{}
+.icon_name{display: block;}
+.icon li a:hover{font-weight: bold;}
+
+#box3{width: 1224px; height: 404px; background-color: #fff;  margin:80px auto 0; background-image: url(./images/pure.jpg);  position: relative;}
+h3{color: #5f6164; position: absolute; top: 350px; left: 400px;}
+.p_pro{position: absolute; top: 40px; left: 600px;overflow: hidden; }
+.p_pro > div{float: left;width: 250px;position: relative;background-color: #fff;font-size: 18px; text-align: center; float:left;padding: 30px 0;}
+.p_pro > div:nth-of-type(1){margin-right: 30px;}
+.pure{}
+.pure img{width: 80px; height: 200px; }
+.pure > span{display: block;}
+.pure_name{font-size: 14px; color: #828282;}
+.pure_name:hover{font-weight: bold;}
+.price{font-size: 16px; font-weight: bold;}
+
+#box4{width: 1224px; height: 328px; background-color: #fff; margin: 80px auto 0;  background-image: url(./images/insta_bg.jpg);  position: relative;}
+.sns{  }
+.insta{position: absolute; top: 70px; left: 200px; }
+h5{position: absolute; top: -30px; left: -3px; }
+h4{font-size: 25px; font-weight: bold;}
+.pick{font-size: 16px;}
+.pick a{}
+.tag{width: 450px; position: absolute; top: 100px; left: 1px; }
+.shap{font-size: 14px; color: #fff; background-color: #fe7a6d; border-radius: 30px; padding: 8px 12px;line-height:40px; }
+.insta_p{width: 310px;position: absolute; top:-40px; left: 550px; }
+.insta_p img{width: 90px;}
+
+
+
+
+
+/* 풋터영역 */
+#footer{width:1600px; height: 250px; background-color: #f9f9f9; margin:0 auto; margin-top: 100px; position: relative;}
+.f_logo{position: absolute; top: 100px; left: 125px; width: 200px; height: 150px;}
+.f_logo img{width: 80px;}
+.company{position: absolute; top: 50px; left: 250px; font-size: 16px;}
+.ad{position: absolute; top: 90px; left: 250px; font-size: 14px; line-height: 30px;}
+.k_mark{position: absolute; top:200px; left: 50px; }
+.m_sns{position: absolute; top:210px;right: 50px;}
+
+
+/* 퀵 */
+#wrap{width: 1600px; position: relative; margin: 0 auto;}
+#quick{font-size: 14px; color: #828282;position: fixed; top: 150px; right: 20px; width: 90px;text-align: center; line-height: 30px; background: #fff; border: 1px solid #ffbab3; }
+#quick img{width: 50px;margin-bottom: 10px;}
+.m_cart{font-size: 16px; font-weight: bold; color: #ffbab3; margin-bottom: 5px;}
+.ewg{margin-top: 80px;}
+
+
