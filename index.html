@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>나솔 포트폴리오</title>
+    <link rel="shortcut icon" href="./img/favicon.png"><!-- 파비콘 제작해서 추가 -->
+    <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+    <!--<link rel="stylesheet" type="text/css" href="./css/examples.css" />-->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/modernizr.custom.min.js"></script>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-ui-1.12.0.custom.min.js"></script>
+
+    <script type="text/javascript" src="./js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="./js/examples.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="js/mixFilter.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#fff', '#eae6e7', '#fff', '#a4a4a4'],
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+                menu: '#menu',
+                afterLoad: function(anchorLink, index) {
+                    //section 2
+                    if (index == 2) {
+                        //moving the image
+                        $('#section1').find('.occupy').delay(1000).animate({
+                            left: '0%'
+                        }, 1000, 'easeOutExpo');
+
+
+
+                    }
+                    //section 3
+                    if (anchorLink == '3rdPage') {
+                        //moving the image
+                        $('#section2').find('.intro').delay(0).animate({
+                            left: '0%'
+                        }, 500, 'easeOutExpo');
+                    }
+                }
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <div id="menubox">
+        <ul id="menu">
+            <li data-menuanchor="firstPage"><a href="#firstPage" onfocus="this.blur();">INTRO</a>
+            <li data-menuanchor="secondPage"><a href="#secondPage" onfocus="this.blur();">PROFILE</a></li>
+            <li data-menuanchor="3rdPage"><a href="#3rdPage" onfocus="this.blur();">PORTFOLIO</a></li>
+        </ul>
+    </div>
+    <div id="fullpage">
+        <div class="section" id="section0">
+            <h1>Portfolio</h1>
+            <p>NASOL PORTFOLIO</p>
+            <div id="scroll">
+                <img src="img/scrolldown.gif" width="30" height="auto">
+                <h6>scroll down</h6>
+            </div>
+        </div>
+
+        <div class="section" id="section1">
+            <div id="profile">
+                <div class="prof1">
+                    <ul>
+                        <h2>Profile</h2>
+                        <h3>나솔 (NA SOL)</h3>
+                        <li class="icon"><img src="img/birthday.png" alt="">1993.12.16</li>
+                        <li class="icon"><img src="img/mobile.png" alt="">010.3066.5620</li>
+                        <li class="icon"><img src="img/mail.png" alt="">skthf3914@naver.com</li>
+                        <li class="icon"><img src="img/college.png" alt="">2016. 2 건국대학교 도자디자인과 졸업</li>
+                    </ul>
+                    <li class="profile_img"><img src="img/profile.JPG" alt=""></li>
+                </div>
+                <div class="prof2">
+                    <div class="list1">
+
+                        <p><span class="title">자 격 증</span><span class="content">웹디자인 기능사(필기), ACS 포토샵, ACS 일러스트, 운전면허증 2종보통</span></p>
+
+                        <p><span class="title">교육사항</span><span class="content">2018.09~2019.03 스마트기기 서비스를 위한 디지털 UX/UI디자인(반응형웹구현) 전문가 [그린컴퓨터아트학원 수료]</span></p>
+
+                        <p><span class="title">경력사항</span><span class="content">2016.08~2017.12 아트키즈팩토리 (아동미술학원) 교사 <br>2018.01~2018.08 륀에이치(카페)</span></p>
+                    </div>
+                    <div class="list23">
+                        <div class="list2">
+                            <h4 class="title">Software Skills</h4>
+                            <div class="skill">
+                                <div id="ai">
+                                    <p>Illustrator</p>
+                                    <div class="bar">
+                                        <div class="fullbar">
+                                            <div class="occupy"><span>70%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="ps">
+                                    <p>Photoshop</p>
+                                    <div class="bar">
+                                        <div class="fullbar">
+                                            <div class="occupy"><span>80%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="ht">
+                                    <p>HTML/CSS</p>
+                                    <div class="bar">
+                                        <div class="fullbar">
+                                            <div class="occupy"><span>75%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="ja">
+                                    <p>Javascript</p>
+                                    <div class="bar">
+                                        <div class="fullbar">
+                                            <div class="occupy"><span>60%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="jq">
+                                    <p>JQuery</p>
+                                    <div class="bar">
+                                        <div class="fullbar">
+                                            <div class="occupy"><span>60%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="ms">
+                                    <p>MS Office</p>
+                                    <div class="bar">
+                                        <div class="fullbar">
+                                            <div class="occupy"><span>80%</span></div>
+                                        </div>
+                                    </div>
+                                </div> <!--  ms   -->
+
+                            </div> <!-- skill  -->
+                        </div> <!-- list2 -->
+                        <div class="list3">
+                            <div class="hobby">
+                                <h4 class="title">Hobby</h4>
+                                <ul>
+                                    <li><img src="./img/airplane.png" alt="">여행</li>
+                                    <li><img src="./img/museum.png" alt="">전시회관람</li>
+                                    <li><img src="./img/movie.png" alt="">영화관람</li>
+                                    <li> <img src="./img/camera.png" alt="">사진찍기</li>
+                                    <li><img src="./img/cutlery.png" alt="">맛집탐방</li>
+                                </ul>
+                            </div>
+                            <div class="pers">
+                                <h4 class="title2">Personality</h4>
+                                <div id="per1">
+                                    <p class="left">외향적</p>
+                                    <div class="bar2">
+                                        <div class="fullbar2">
+                                            <div class="occupy2"></div>
+                                        </div>
+                                    </div>
+                                    <p class="right">내향적</p>
+                                </div>
+                                <div id="per2">
+                                    <p class="left">이성적</p>
+                                    <div class="bar2">
+                                        <div class="fullbar2">
+                                            <div class="occupy2"></div>
+                                        </div>
+                                    </div>
+                                    <p class="right">감성적</p>
+                                </div>
+                                <div id="per3">
+                                    <p class="left">능동적</p>
+                                    <div class="bar2">
+                                        <div class="fullbar2">
+                                            <div class="occupy2"></div>
+                                        </div>
+                                    </div>
+                                    <p class="right">수동적</p>
+                                </div> <!--  per3  -->
+
+                            </div> <!-- list3 -->
+                        </div> <!--  list23 -->
+
+                    </div> <!-- prof2  -->
+
+                </div> <!--  profile  -->
+            </div> <!--  section1  -->
+
+        </div>
+        <div class="section" id="section2">
+            <div class="intro">
+                <div class="art">
+                    <h2>Art gallery</h2>
+                    <div class="filterWrap">
+                        <button class="filter" data-filter="all">All</button>
+                        <button class="filter" data-filter=".web">WEB</button>
+                        <button class="filter" data-filter=".responsive">RESPONSIVE</button>
+                        <button class="filter" data-filter=".mobile">MOBILE</button>
+                    </div>
+                </div>
+                <div class="container" id="mixItUp">
+                    <div class="mix web" id="d1" data-myorder="1">
+                        <img src="img/isoi.png" alt="" class="d_img">
+                        <div class="po_title">
+
+                            <h3 class="sum_tit"> 아이소이(화장품 브랜드)</h3>
+                            <p class="discription">천연성분의 화장품임을 표현할 수 있도록 베이직하고 깔끔하게 디자인</p>
+                            <p class="size">web site(1920X1080)</p>
+                            <p class="program">Photoshop/Illustrator/HTML/CSS/JQuery</p>
+                            <a href="http://nasol3.dothome.co.kr/isoi" target="new" class="ov_img"><img src="./img/link.png" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="mix web" id="d2" data-myorder="2">
+                        <img src="img/green.png" alt="" class="d_img">
+                        <div class="po_title">
+                            <h3 class="sum_tit"> 그린플러그드(페스티벌)</h3>
+                            <p class="discription">페스티벌의 생동감있고 건강한 이미지를 강조하여 디자인</p>
+                            <p class="size">web site(1920X1080)</p>
+                            <p class="program">Photoshop/Illustrator/HTML/CSS/JQuery</p>
+                            <a href="http://nasol3.dothome.co.kr/green" target="new" class="ov_img"><img src="./img/link.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mix web" id="d3" data-myorder="3">
+                        <img src="img/hidden.png" alt="" class="d_img">
+                        <div class="po_title">
+                            <h3 class="sum_tit"> 히든클리프(호텔)</h3>
+                            <p class="discription">호텔의 고급서비스와 편의시설 등 상세한 안내사이트 </p>
+                            <p class="size">web site(1920X1080)</p>
+                            <p class="program">Photoshop/Illustrator/HTML/CSS/JQuery</p>
+                            <a href="http://nasol3.dothome.co.kr/hidden" target="new" class="ov_img"><img src="./img/link.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mix responsive" id="d4" data-myorder="4">
+                        <img src="img/binggrae.png" alt="" class="d_img">
+                        <div class="po_title">
+                            <h3 class="sum_tit"> 빙그레(기업)</h3>
+                            <p class="discription">바나나맛 우유 외에 신상품 정보제공 사이트</p>
+                            <p class="size">Responsive Web</p>
+                            <p class="program">Photoshop/Illustrator/HTML/CSS/JQuery</p>
+                            <a href="http://nasol3.dothome.co.kr/binggrae" target="new" class="ov_img"><img src="./img/link.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mix responsive" id="d5" data-myorder="5">
+                        <img src="img/khf.png" alt="" class="d_img">
+                        <div class="po_title">
+                            <h3 class="sum_tit">한국문화재단(공기업)</h3>
+                            <p class="discription">최신 그리드 디자인을 접목한 한국문화정보 전달 사이트</p>
+                            <p class="size">Responsive Web</p>
+                            <p class="program">Photoshop/Illustrator/HTML/CSS/JQuery</p>
+                            <a href="http://nasol3.dothome.co.kr/kchf" target="new" class="ov_img"><img src="./img/link.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <!--<div class="mix responsive" id="d6" data-myorder="6">
+                        <img src="img/khf.png" alt="" class="d_img">
+                        <div class="po_title">
+                            <h3 class="sum_tit">타이틀제목</h3>
+                            <p class="discription">상세설명 </p>
+                            <p class="size">Responsive Web</p>
+                            <p class="program">Photoshop/Illustrator/HTML/CSS/JQuery</p>
+                            <a href="http://nasol.dothome.co.kr/isoi" target="new" class="ov_img"><img src="./img/link.png" alt="">
+                            </a>
+                        </div>
+                    </div>관공서추가-->
+                </div>
+                
+            </div>
+            <div id="footer">
+                <p>COPYRIGHT &copy; 2019 NaSol ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
