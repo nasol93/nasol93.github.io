@@ -138,7 +138,7 @@ img{border: none;}
 /*page5*/
 .icon2{width: 200px;height: 40px;position: relative;left: 50%;margin-left: -100px;margin-top: 30px;}
 .map{position: absolute;float: left;left: 50%;margin-left: -750px;margin-top: 30px;}
-.mapimg{width: 500px;padding: 0 10px;}
+.map img{width: 500px;height:450px;padding: 0 10px;}
 #map_t{position: absolute;float: left;left: 50%;margin-left: -730px;bottom: 18%;}
 .map2{width: 670px;float: left;padding: 0 30px;}
 .map_txt1{font-size: 16px;font-weight: 800;color: #006e38;line-height: 30px;}
