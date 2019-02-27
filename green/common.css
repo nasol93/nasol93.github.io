@@ -116,7 +116,7 @@ img{border: none;}
 /*page4*/
 .mate{font-size: 60px;font-weight: 900;color: #fff;margin: 0 auto;text-align: center;padding-top: 10%;}
 .mate_txt1{font-size: 20px;font-weight: 600;color: #fff;margin: 0 auto;text-align: center;padding-top: 50px;line-height: 30px;}
-.mate_txt2{position: absolute;margin-top: 7%;left: 50%;margin-left: -90px;width: 200px;font-size: 25px;font-weight: 700;color: #fff;text-align: center;border: 2px solid #fff;padding: 10px;box-sizing: border-box;z-index: 2;}
+.mate_txt2{position: relative;margin-top: 7%;left: 50%;margin-left: -90px;width: 200px;font-size: 25px;font-weight: 700;color: #fff;text-align: center;border: 2px solid #fff;padding: 10px;box-sizing: border-box;z-index: 2;}
 .mate_txt2 a{color: #fff;}
 .mate_txt2:hover{border-color: #f8a85f;}
 .mate_txt2:hover a{color: #fb8201;}
