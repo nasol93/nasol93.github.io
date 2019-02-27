@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>빙그레</title>
+    <link rel="shortcout icon" href="img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="js/style.js"></script>
+    
+    <!-- bxSlider Javascript file -->
+</head>
+
+
+<script>
+    // http://bxslider.com/options / options: 'horizontal', 'vertical', 'fade' --모드에 변경해서 쓰면 옵션이 변경됨 / 가로 / 세로 / 점점사라짐
+$(document).ready(function(){
+  $('.product').bxSlider({
+  	 mode: 'horizontal',// 가로 방향 수평 슬라이드 ‘horizontal’‘vertical’‘fade’
+                 mode: 'horizontal',// 가로 방향 수평 슬라이드 ‘horizontal’‘vertical’‘fade’
+                speed: 800,        // 이동 속도를 설정
+                pager: true,      // 현재 위치 페이징 표시 여부 설정
+                moveSlides: 1,     // 슬라이드 이동시 개수
+              /*  slideWidth: 1600,*/   // 슬라이드 너비
+                minSlides: 1,      // 최소 노출 개수
+                maxSlides: 1,      // 최대 노출 개수
+                slideMargin: 0,    // 슬라이드간의 간격
+                auto: true,        // 자동 실행 여부
+                autoHover: true,   // 마우스 호버시 정지 여부
+                controls: true	// 이전 다음 버튼 노출 여부
+  });
+});  
+    
+  
+ </script>
+
+<body>
+    <input type="radio" name="menu" id="toggle1" class="none">
+    <input type="radio" name="menu" id="toggle2" class="none">
+    <div id="wrap">
+        <header id="header">
+            <div id="header_top">
+                <div class="left">
+                    <div class="left1"><a href="">구매포탈시스템</a></div>
+                    <div class="left2"><a href="">인재채용</a></div>
+                </div>
+                <div class="search"><input type="text"></div>
+                <div class="right">
+                    <select name="" id="" class="sel_box1">
+                        <option value="">고객센터</option>
+                        <option value="">자주 묻는 질문</option>
+                        <option value="">1:1 이메일 문의</option>
+                    </select>
+                    <select name="" id="" class="sel_box2">
+                        <option value="">KOR</option>
+                        <option value="">ENG</option>
+                    </select>
+                </div>
+            </div>
+            <h1 id="header_logo"><a href="#"><img src="./img/logo.png" alt="로고"></a></h1>
+            <label for="toggle1" class="toggle_btn"></label>
+            <div class="hd_wrap">
+                <!-- nav#gnb>ul>li*3>a.mnb -->
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <a href="" class="mnb">스토리</a>
+                            <ul class="sub">
+                                <li><a href="">빙그레 소개</a></li>
+                                <li><a href="">글로벌 빙그레</a></li>
+                                <li><a href="">히스토리</a></li>
+                                <li><a href="">투자정보</a></li>
+                                <li><a href="">사회공헌</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="mnb"><span>브랜드</span></a>
+                            <ul class="sub">
+                                <li><a href="./sub.html" target="new"><span>아이스크림</span></a></li>
+                                <li><a href="">우유/가공유</a></li>
+                                <li><a href="">발효유</a></li>
+                                <li><a href="">커피/음료</a></li>
+                                <li><a href="">스낵/디저트</a></li>
+                                <li><a href="">가정간편식</a></li>
+                                <li><a href="">수출제품</a></li>
+                                <li><a href="l">펫푸드</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="mnb">라이브</a>
+                            <ul class="sub">
+                                <li><a href="">소셜라이브</a></li>
+                                <li><a href="">빙그레 영상</a></li>
+                                <li><a href="">함께해요 이벤트</a></li>
+                                <li><a href="">공지사항</a></li>
+                                <li><a href="">보도자료</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="mnb">플래그십스토어</a>
+                            <ul class="sub">
+                                <li><a href="">소프트랩</a></li>
+                                <li><a href="">옐로우카페</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <video id="vdo1" src="./mv/petmilk.mp4" autoplay loop muted preload="auto"></video>
+        <div id="banner_wrap">
+            <section id="banner">
+                <img src="./img/pageskin.png" alt="">
+                <div class="ban">
+                    <a href="" class="ban1"><img src="./img/orange.png" alt="귤맛"></a>
+                    <a href="" class="ban1"><img src="./img/straw.png" alt="딸기맛"></a>
+                </div>
+            </section>
+        </div>
+
+        <div id="pro">
+            <h2 class="pro_T">맛과 즐거움을 <span>만나다</span></h2>
+            <div class="product">
+                <div class="product1">
+                    <img src="img/yo1.png" alt="">
+                    <img src="img/yo2.png" alt="">
+                    <img src="img/yo3.png" alt="">
+                    <img src="img/yo4.png" alt="">
+                </div>
+                <div class="product2">
+                    <img src="img/together1.png" alt="">
+                    <img src="img/together2.png" alt="">
+                    <img src="img/together3.png" alt="">
+                    <img src="img/together4.png" alt="">
+                </div>
+                <div class="product3">
+                    <img src="img/melona1.png" alt="">
+                    <img src="img/melona2.png" alt="">
+                    <img src="img/melona3.png" alt="">
+                    <img src="img/melona4.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div id="yellowcafe">
+            <img src="./img/yellow_logo.png" alt="">
+        </div>
+        <div class="yelca">
+            <h2 class="yel_T">Yellow Cafe<span>를 소개합니다</span></h2>
+            <p class="yel_t">Yellow Cafe는 바나나맛우유만을 테마로 한 카페입니다</p>
+            <div class="yel_p">
+                <ul>
+                    <li><a href=""><img src="./img/shop1.jpg" alt=""></a></li>
+                    <li><a href=""><img src="./img/shop2.jpg" alt=""></a></li>
+                    <li><a href=""><img src="./img/shop3.jpg" alt=""></a></li>
+                    <li><a href=""><img src="./img/shop4.jpg" alt=""></a></li>
+                    <li><a href=""><img src="./img/shop5.jpg" alt=""></a></li>
+                    <li><a href=""><img src="./img/shop6.jpg" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="yel_s">
+                <ul>
+                    <li>
+                        <a href="" class="item1">
+                            <div class="itemBox">
+                                <h2 class="title1">동대문점</h2>
+                                <p class="detail">서울시 중구 을지로6가 17-2 현대시티아울렛 동대문점 지하 2층<br>
+                                    (도로명 : 서울시 중구 장충단로 13길20)<br>
+                                    02-2283-2228</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="item2">
+                            <div class="itemBox">
+                                <h2 class="title1">제주점</h2>
+                                <p class="detail">제주특별자치도 서귀포시 색달동 2864-10 1층<br>
+                                    (도로명 : 제주특별자치도 서귀포시 중문관광로 90)<br>
+                                    064-739-1140</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="sns">
+            <div class="snstitle">
+                <h2 class="sns_T">맛과 즐거움을 <span>나누다</span></h2>
+                <p class="sns_t">새로운 즐거움이 가득한 빙그레의 맛을 SNS를 통해 함께 나눠보세요.</p>
+                <div id="sns_icon">
+                    <ul>
+                        <li><a href="https://www.instagram.com/binggraekorea/" target="new" class="sns_icon1"></a></li>
+                        <li><a href="https://www.facebook.com/bingsmile" target="new" class="sns_icon2"></a></li>
+                        <li><a href="https://www.youtube.com/user/bingsmile" target="new" class="sns_icon3"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sns_P">
+                <ul>
+                    <li><a href=""><img src="./img/snsphoto1.jpg" alt=""></a></li>
+                    <li><a href=""><img src="./img/snsphoto2.jpg" alt=""></a></li>
+                    <li><a href=""><img src="./img/snsphoto3.jpg" alt=""></a></li>
+                    <li><a href=""><img src="./img/snsphoto4.jpg" alt=""></a></li>
+                    <li><a href=""><img src="./img/snsphoto5.jpg" alt=""></a></li>
+                    <li><a href=""><img src="./img/snsphoto6.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="ft_logo">
+                <ul>
+                    <li><a href=""><img src="./img/ft_logo1.png" alt=""></a></li>
+                    <li><span>&copy; Binggrae all rights reserved.</span></li>
+                </ul>
+            </div>
+            <div class="add">
+                <p class="add1"><span>오시는 길</span> | <span>개인정보처리방침</span></p>
+                <p class="add2">고객센터 | 1:1 이메일 문의<br>
+                    080-022-0056 (이용시간 평일 09:00~17:30)</p>
+                <p class="add3">경기도 남양주시 다산동 4344-3 / 경기도 남양주시 다산순환로 45(다산동)</p>
+            </div>
+            <div class="ft_sns">
+                <div class="site">
+                    <select name="" id="" class="site1">
+                        <option value="">Family Site</option>
+                        <option value="">빙그레 공식 페이스북</option>
+                        <option value="">빙그레 공식 블로그</option>
+                        <option value="">빙그레 공식 인스타그램</option>
+                        <option value="">빙그레 공식 유튜브</option>
+                        <option value="">바나나맛우유 페이스북</option>
+                        <option value="">아이스크림 페이스북</option>
+                        <option value="">끌레도르 브랜드 사이트</option>
+                        <option value="">헬로빙그레 브랜드 사이트</option>
+                    </select>
+                </div>
+                <div class="f_sns">
+                    <ul>
+                        <li><a href=""><img src="./img/ft_sns1.png" alt=""></a></li>
+                        <li><a href=""><img src="./img/ft_sns2.png" alt=""></a></li>
+                        <li><a href=""><img src="./img/ft_sns3.png" alt=""></a></li>
+                        <li><a href=""><img src="./img/ft_sns4.png" alt=""></a></li>
+                        <li><a href=""><img src="./img/ft_sns5.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="quick">
+        <div class="top_B">
+            <span class="top_btn"><a href="">TOP</a></span>
+        </div>
+    </div>
+    <div id="gnbMo">
+        <label for="toggle2">close</label>
+        <ul>
+            <li><a href="">스토리</a></li>
+            <li><a href="">브랜드</a></li>
+            <li><a href="">라이브</a></li>
+            <li><a href="">플래그십스토어</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
