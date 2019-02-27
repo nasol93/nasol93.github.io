@@ -139,8 +139,8 @@ img{border: none;}
 .icon2{width: 200px;height: 40px;position: relative;left: 50%;margin-left: -100px;margin-top: 30px;}
 .map{position: relative;float: left;left: 50%;margin-left: -750px;margin-top: 30px;overflow:hidden;}
 .map img{width: 500px;height:450px;padding: 0 10px;}
-#map_t{position: relative;float: left;left: 50%;margin-left: -730px;}
-.map2{position: relative;width: 670px;float: left;padding: 0 30px;}
+#map_t{position: relative;float: left;left: 50%;margin-left: -730px;width:500px;height:250px;}
+.map2{width: 670px;float: left;padding: 0 30px;}
 .map_txt1{font-size: 16px;font-weight: 800;color: #006e38;line-height: 30px;}
 .map_txt2{font-size: 14px;font-weight: 600;color: #777;line-height: 20px;}
 .map3{position: absolute;left: 50%;margin-left: -210px;bottom: 10%;}
