@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>PANDORA | 판도라</title>
+    <meta name="Subject" content="홈페이지주제 입력">
+    <meta name="Title" content="홈페이지이름 입력">
+    <meta name="Description" content="설명문 입력">
+    <meta name="Keywords" content="키워드 입력">
+    <meta name="Author" content="만든사람 이름"> 
+    <link href="shortcut_apple1.png" rel="apple-touch-icon-precomposed" /> 
+    <link href="shortcut_apple2.png" rel="apple-touch-icon" />
+    <link href="apple-114x114.png" sizes="114x114" rel="apple-touch-icon" />
+    <link href="apple-144x144.png" sizes="144x144" rel="apple-touch-icon" /> 
+    <link href="favicon.ico" rel="shortcut icon" />
+    <script type="text/javascript"> 
+     <!-- 
+     // 주소창 자동 닫힘 
+     window.addEventListener("load", function(){ 
+        setTimeout(loaded, 100); 
+     }, false); 
+
+     function loaded(){ 
+        window.scrollTo(0, 1); 
+     } 
+     //--> 
+    </script> 
+    <link rel="stylesheet" href="common.css">
+    <style>
+       
+        #hd { width:100%; height:70px; clear:both; border-bottom:1px solid #000; }
+        #hd .logo {display:block; padding:15px; }
+        #btnGroup { width:100%; clear:both; }
+        #btnGroup li { float:left; padding: 10px;  }
+
+        .conFrame { clear:both; width:100%; overflow-x:hidden; }
+        #btnGroup label { color:#333; display:block; background-color:#fff; 
+            width:40px; text-align:center; line-height:40px; }
+        #btnGroup label.on { color:#fff; background-color:#333; }    
+        #images { width:500%; }
+        #images li { float:left; width:20%; }
+        #page5 .title2 { text-align:center; padding-top:120px;}
+        #page5 .title2:after { margin:4px auto; width:180px; }
+        #page5 .title4:after { content:" "; display:block; width:1px; height:68px;         background:#666; margin:5px auto; }
+        .contactLst { padding-top:25px; }
+        .copymusign { text-align:center; }
+    </style>
+    <link rel="stylesheet" href="collap.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="collap.js"></script>
+    <script>
+    $(document).ready(function(){
+        var wd = parseInt($(window).width());
+        $("#btnGroup label").click(function () {
+            $("#btnGroup label").removeClass("on");
+            $(this).addClass("on");
+            var curImg = parseInt($(this).attr("for"));
+            $("#images").animate({"margin-left":(curImg-1)*(wd*-1)}, 1000);
+        });
+    })
+    </script>
+</head>
+<body>
+    <header id="hd">
+        <a href="index.html" class="logo">
+            <img src="./images/logo.png" alt="logo">
+        </a>
+    </header>
+    <div id="content">
+        <section class="page" id="page1">
+            <h2 class="title2">2019 PANDORA</h2>
+            <img src="./images/main.jpg" alt="배너1" class="pageVs">
+            <p class="coment1">2019 PANDORA 클럽 참 – 당신이 영감의 주인공입니다. <br>한 분 한 분 고유한 개성을 가진 여러분처럼, 하나 하나 독특한 참을 디자인하데에서 영감을 얻었습니다. 드디어 공개합니다..</p>            
+        </section>
+        <section class="page" id="page2">
+            <h2 class="title2">BE YOURSELF</h2>
+            <h3 class="title3">여러분의 소중한 추억을 간직한 징표</h3>
+            <img src="./images/ban1.jpg" alt="배너1" class="pageVs">
+            <p class="coment1">2019년을 위한 참을 만들기 위해, 세계 곳곳의 PANDORA 클럽 회원들의 이야기와 추억, 꿈에 귀 기울였습니다. 우리는 이러한 소중한 이야기를 듣고 모든 부분에 특별함을 담은 참을 만들었습니다. 여러분이 어떤 이야기를 간직하고 있든, 항상 자기 자신이 중심이 되라는 아름다운 나만의 징표를 만나보세요.
+            </p>
+        </section>
+        <section class="page" id="page3">
+            <h2 class="title2">DIAMOND</h2>
+            <h3 class="title3">섬세한 보석</h3>
+            <img src="./images/ban2.jpg" alt="배너1" class="pageVs">
+            <p class="coment1">처음으로 진짜 다이아몬드*와 아름다운 'Be yourself'가 새겨진 스털링 실버와 PANDORA Rose의 투톤 디자인 PANDORA 클럽 참을 디자인했습니다. 
+            </p>
+            <a href="" class="more1">DISCOVER</a>
+        </section>
+        <section class="page" id="page4">
+            <div class="btnFrame" id="btnGroup">
+                <ul>
+                    <li><label for="1" class="on">1</label></li>
+                    <li><label for="2">2</label></li>
+                    <li><label for="3">3</label></li>
+                    <li><label for="4">4</label></li>
+                    <li><label for="5">5</label></li>
+                </ul>
+            </div>
+            <div class="conFrame">
+                <ul class="conBox" id="images">
+                    <li>
+                        <h2 class="title2">CHARMS</h2>
+                        <img src="./images/charms.jpg" alt="참" class="pageVs2">
+                        <a href="" class="more2">지금 만나보세요</a>
+                    </li>
+                    <li>
+                        <h2 class="title2">RING</h2>
+                        <img src="./images/ring.jpg" alt="반지" class="pageVs2">
+                        <a href="" class="more2">지금 만나보세요</a>
+                    </li>
+                    <li>
+                        <h2 class="title2">BANGLE</h2>
+                        <img src="./images/bangle.jpg" alt="팔찌" class="pageVs2">
+                        <a href="" class="more2">지금 만나보세요</a>
+                    </li>
+                    <li>
+                        <h2 class="title2">NECKLACE</h2>
+                        <img src="./images/necklace.jpg" alt="목걸이" class="pageVs2">
+                        <a href="" class="more2">지금 만나보세요</a>
+                    </li>
+                    <li>
+                        <h2 class="title2">EARRING</h2>
+                        <img src="./images/earring.jpg" alt="귀걸이" class="pageVs2">
+                        <a href="" class="more2">지금 만나보세요</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="page" id="page5">
+            <h2 class="title4">Text us!</h2>
+            <h2 class="title2">가까운 PANDORA 스토어</h2>
+            <a href="" class="more2">search<img src="./images/search.png" alt=""></a>
+            <img src="./images/pan1.jpg" alt="" class="pageVs2">
+            <ul class="contactLst">
+                <li>
+                    <div>
+                        <h2 class="title5">JOIN THE COMPANY</h2>
+                        <p class="coment2">
+                            <span class="addr">
+                            Talent are always welcom.<br>
+                            csvoc@starluxe.co.kr</span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h2 class="title5">CONTACTS</h2>
+                        <p class="coment2">
+                            주식회사 스타럭스(PANDORA 공식 수입원) <br>
+                            서울시 강남구 영동대로 511 트레이드타워 3806호 
+                        </p>
+                        <p class="coment2">
+                            <span class="addr">511, Yeongdong-daero, Gangnam-gu, Seoul, Republic of Korea<br>
+                            </span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h2 class="title5">TEL</h2>
+                        <p class="coment2">
+                            <span class="addr">+82-2-1688-5501</span>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="page" id="copyright">
+            <ul>
+                <li class="fo-box">
+                   <h3 class="title6">Follow us</h3>
+                    <p class="copy">
+                       <a class="lnk1" href="https://www.facebook.com/pandorakorea.kr" target="_blank">FACEBOOK</a>
+                       <br>
+                        <a class="lnk1" href="https://www.youtube.com/user/TheOfficialPandora" target="_blank">YOUTUBE</a>
+                        <br>
+                        <a class="lnk1" href="https://www.pinterest.co.kr/officialpandora" target="_blank">PINTEREST</a>
+                        <br>
+                        <a class="lnk1" href="https://www.instagram.com/theofficialpandora" target="_blank">INSTAGRAM</a>
+                    </p>
+               </li>
+            </ul>
+        </section>
+    </div>
+    <div class="lstBtnFrame">
+        <ul class="lstBtnGroup">
+            <li class="lstLineGroup">
+                <div class="lstLineBox">
+                    <span class="lstLine"></span>
+                    <span class="lstLine"></span>
+                    <span class="lstLine"></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="lstFrame">
+        <nav id="gnb">
+            <div class="closeBtn"></div>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html">NEW</a></li>
+                <li><a href="index.html">JEWELRY</a></li>
+                <li><a href="index.html">PANDORA CLUB</a>
+                </li>
+                <li><a href="index.html">UNIVERS</a></li>
+            </ul>
+            <ul class="linkGroup">
+                <li><a href="https://www.facebook.com/pandorakorea.kr" target="_blank">FACEBOOK</a></li>
+                <li><a href="https://www.youtube.com/user/TheOfficialPandora" target="_blank">YOUTUBE</a></li>
+                <li><a href="https://www.instagram.com/theofficialpandora" target="_blank">INSTAGRAM</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

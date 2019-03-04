@@ -1,0 +1,41 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+* { margin:0; padding:0; }
+body, html { font-family: 'Noto Sans KR', sans-serif; 
+    width:100%; height:100%;}
+ul { list-style:none; }
+a { text-decoration:none; }
+img { border:0; }
+
+.page { width:100%; clear:both; padding-top: 40px; }
+.title1 { font-size:32px; line-height:72px; text-indent:10px; }
+.title2 { font-size:20px; line-height:32px; padding:10px; clear:both; }
+.title2:after { content:" "; display:block; width:30px; height:3px;
+    background:#000;   }
+.title3 { font-size:16px; line-height:28px; color:#999; text-indent:10px; font-weight:200; text-shadow:inset 1px 1px 1px #666; }
+.title4 { font-size:20px; line-height:28px; text-align:center;
+ font-style:italic; color:#666; }
+.title4:before { content:" "; display:block; width:90px; height:3px;
+  background:#666; margin:5px auto; }
+.title4:after { content:" "; display:block; width:90px; height:3px;
+  background:#666; margin:5px auto; }
+.title5 {  font-size: 18px;    color: #4e4e4e;    font-weight: 700;
+margin-bottom:10px; width:80%; margin:10px auto;}
+.title6 { font-size:15px;    color:#4e4e4e;  margin: 0.85em auto;
+background: url("./images/fo-bg.png") no-repeat left bottom;
+padding-bottom:12px;    font-weight:400;  line-height:1.6; width:80%; }
+.title7 { font-size:22px; color:#333; width:80%; margin:5% auto; line-height:1.1; }
+.coment1 { font-size:14px; line-height:28px; padding: 10px; color:#999; }
+.coment2 { line-height:1.6; font-size: 12px; letter-spacing: 0; 
+    padding:1% 10%; margin-bottom:15px; color:#999; }
+.copy, .copy a {    color:#888;    font-family:'Roboto', sans-serif !important;
+letter-spacing:0;    font-weight:400;    min-height:80px;    font-size:12px; 
+width:80%; margin:0 auto; }
+.pageVs { display:block; width:100%; height: 300px;}
+.pageVs2 { display:block; width:80%; margin:0 auto;}
+.more1 { display:block; padding:20px; font-size:12px; color:#333;
+    background-image:url("./images/plus-img.png");  width:90px;
+    background-repeat:no-repeat; background-position:right center; }
+.more2 { display:block; width:70%; margin:20px auto; padding:4%; 
+    height:40px; border:1px solid #ccc; color:#ccc; text-align:center;
+    line-height:40px; }
