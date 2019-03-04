@@ -1,0 +1,85 @@
+	@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+	* { margin:0; padding:0; font-family: 'Nanum Gothic', sans-serif; }
+	body, html { width:100%; height:100%; overflow:hidden; }
+	a { text-decoration:none; }
+	ul { list-style:none; }
+	img { border:0; }
+	#sil1 { width:100%; height:100%; background:rgba(0,0,0,0.65); 
+		position:fixed; left:75%; top:; display:none; z-index:10; opacity:0;
+		transition:0.9s; transition-delay:0.8s;}
+	#wrap { margin-left:0; width:100%; height:100%; transition:0.85s; opacity:1; }
+	.bg1 { background-color:#fff;border-radius: 10px;border: 2px #e1cd8a solid;}
+	.bg2 { background-color:#fff;border-radius: 10px;border: 2px #e1cd8a solid;}
+	.bg3 { background-color:#fff;border-radius: 10px;border: 2px #e1cd8a solid;}
+	.bg4 { background-color:#fff;border-radius: 10px;border: 2px #e1cd8a solid;}
+
+	#hd { width:100%; height:45px; background-color:#fff; 
+		position:relative; text-align:center; }
+	#open_lst, .home { width:45px; height:45px; display:block;
+		background-size:45px 45px; position:absolute; top:0px; }
+	#open_lst { left:0px; background-image:url("./img/bg_header_lnb.png");}
+	.home { right:0px; background-image:url("./img/img_home.png"); }
+	.logo img { height:45px; width:auto; }
+	.search { display:block; width:50px; height:50px; float:right; 
+		background-size:50px auto; background-image:url("./img/img_serch.png");
+		background-position:center center; }
+	.back { display:block; width:50px; height:50px; float:left; 
+		background-size:50px auto; background-image:url("./img/img_prev.png");
+		background-position:center center; }
+	#ck { display:none; }
+	.page_title { text-align:center; font-size:1.7em; height:50px; line-height:50px; 
+		border-bottom:1px solid #b9b9b9; text-indent:25px; }
+	.sub_title { font-size:0.85em; color:#333; line-height:35px; text-indent:10px;}
+	.coment { padding:20px; line-height:1.8; color:#000000; font-size:0.85em; }
+
+
+	#ft { position:fixed;	bottom:0px;  left:0; width:100%; z-index:5; 
+		height:132px;  background-color:#b7a670; color:#ffffff; transition:0.85s; }
+	#fnb { width:99%; height:33px; 	margin:12px auto; }
+	#fnb li { width:33.33%; height:33px; float:left; background-color:#b7a670; }
+	#fnb a { display:block; border-right:1px solid #fff; 
+		border-left:1px solid #fff; color:#fff; 
+		font-size:0.75em; text-align:center; height:33px; 
+		line-height:33px; }
+	#sns { clear:both; width:99%; margin:0 auto; }	
+	.tel_num { width:40%; float:left; text-indent:10px; }
+	#sns ul { float:right; }
+	#sns ul li { float:left; width:32px; height:36px; }
+	#sns ul li a { display:block; width:32px; height:36px; 
+		background-size:60% 60%; background-position:center center; 
+		background-repeat:no-repeat; }
+	#sns .twit { background-image:url("./img/img_twitter.png"); }
+	#sns .face { background-image:url("./img/img_facebook.png"); }
+	.copyright { clear:both; padding-left:10px; font-size:0.75em; text-align:center; }
+
+	#left { width:75%; height:100%; background-color:#f1f1f1; position:fixed; 
+		left:-75%; top:0; z-index:99; transition:0.8s; }
+	#left .row1 { background-color:#111111; padding:20px; color:#ffffff; line-height:1.6;
+	  font-size:0.8em; }
+	#left .login { display:block; width:60%; height:32px; margin:0 auto; 
+		background-image:url("./img/btn_login.png"); background-size:auto 32px;
+		background-repeat:no-repeat; margin-top:25px; }
+	#lnb { clear:both; width:100%; }
+	#lnb li { clear:both; width:100%; height:50px; }
+	#lnb a { background-color:#f1f1f1; border-bottom:1px solid #dddddd; 
+		display:block; line-height:50px; height:50px; background-size:auto 100%; }
+	.left_ico1 { background-image:url("./img/img_lnbtab01_off.png");}
+	.left_ico2 { background-image:url("./img/img_lnbtab02_off.png");}
+	.left_ico3 { background-image:url("./img/img_lnbtab03_off.png");}
+	.left_ico4 { background-image:url("./img/img_lnbtab04_off.png");}
+	.left_ico1.active { background-image:url("./img/img_lnbtab01_on.png");}
+	.left_ico2.active { background-image:url("./img/img_lnbtab02_on.png");}
+	.left_ico3.active { background-image:url("./img/img_lnbtab03_on.png");}
+    .left_ico4.active { background-image:url("./img/img_lnbtab04_on.png");}
+
+	.prom { display:block; width:80%;  background-position:center center;
+		  background-repeat:no-repeat;  background-size:auto 40px;   height:50px;
+		margin:0 auto; background-image:url("./img/btn_reserve.png"); 
+		margin-top:60px; }
+	#close_lst { left:0; background-image:url("./img/bg_header_lnb_active.png");
+	display:block; width:45px; height:45px; background-size:45px 45px; top:0px; display:none; z-index:99; position:fixed; }
+	#ck:checked ~ #close_lst { display:block; left:75%;}
+	#ck:checked ~ #left { left:0; }
+	#ck:checked ~ #sil1 { display:block; opacity:1; }
+	#ck:checked ~ #wrap { margin-left:75%; opacity:0.8;}
+	#ck:checked ~ #wrap #ft { left:75%; }
